@@ -38,93 +38,103 @@
         </tr>
 
     <tr>
-        <td>apetest1</td>
-        <td>10000</td>
-        <td>120</td>
-        <td>211</td>
+        <td>Zo</td>
+        <td>16.9</td>
+        <td>11</td>
+        <td>10.5</td>
     </tr>
 
         <tr>
-        <td>monketest2</td>
-        <td>10003</td>
-        <td>122</td>
-        <td>210</td>
+        <td>Pavlo</td>
+        <td>19</td>
+        <td>12</td>
+        <td>11.2</td>
     </tr>
 
     <tr>
-        <td>baboontest3</td>
-        <td>10006</td>
-        <td>127</td>
-        <td>214</td>
+        <td>Okee</td>
+        <td>8</td>
+        <td>7.9</td>
+        <td>6.5</td>
     </tr>
     
     <tr>
-        <td>test4</td>
-        <td>100</td>
-        <td>12</td>
-        <td>21</td>
+        <td>Lex</td>
+        <td>17</td>
+        <td>11.8</td>
+        <td>10.8</td>
     </tr>
 
+    <tr>
+        <td>Lord Jk</td>
+        <td>12.2</td>
+        <td>8.5</td>
+        <td>7.5</td>
+    </tr>
 
+    <tr>
+        <td>Mike</td>
+        <td>20.8</td>
+        <td>15.2</td>
+        <td>14.8</td>
+    </tr>
 
+    <tr>
+        <td>Fr3ddi3</td>
+        <td>16.7</td>
+        <td>13.3</td>
+        <td>12.5</td>
+    </tr>
+        <tr>
+        <td>MrsDoyle</td>
+        <td>12.3</td>
+        <td>9.4</td>
+        <td>8.9</td>
+    </tr>
+    </tr>
+        <tr>
+        <td>Audrye</td>
+        <td>23.1</td>
+        <td>16.3</td>
+        <td>14.2</td>
+    </tr>
 
+    <tr>
+        <td>AuntieJamo</td>
+        <td>21</td>
+        <td>13.8</td>
+        <td>13.6</td>
+    </tr>
+
+    <tr>
+        <td>DaddysGirl</td>
+        <td>22.7</td>
+        <td>13.8</td>
+        <td>13.7</td>
+    </tr>
+
+    <tr>
+        <td>Valkyrie</td>
+        <td>16.2</td>
+        <td>11.5</td>
+        <td>11.5</td>
+    </tr>
+
+    <tr>
+        <td>Lord Tuna</td>
+        <td>8.5</td>
+        <td>7.4</td>
+        <td>4.8</td>
+    </tr>
+    <tr>
+        <td>Imu</td>
+        <td>14.3</td>
+        <td>10.5</td>
+        <td>9.5</td>
+    </tr>
     </table>
 
-<script>
-function sortTable(n) {
-  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("info");
-  switching = true;
-  // Set the sorting direction to ascending:
-  dir = "asc";
-  /* Make a loop that will continue until
-  no switching has been done: */
-  while (switching) {
-    // Start by saying: no switching is done:
-    switching = false;
-    rows = table.rows;
-    /* Loop through all table rows (except the
-    first, which contains table headers): */
-    for (i = 1; i < (rows.length - 1); i++) {
-      // Start by saying there should be no switching:
-      shouldSwitch = false;
-      /* Get the two elements you want to compare,
-      one from current row and one from the next: */
-      x = rows[i].getElementsByTagName("TD")[n];
-      y = rows[i + 1].getElementsByTagName("TD")[n];
-      /* Check if the two rows should switch place,
-      based on the direction, asc or desc: */
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          // If so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          // If so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      /* If a switch has been marked, make the switch
-      and mark that a switch has been done: */
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      // Each time a switch is done, increase this count by 1:
-      switchcount ++;
-    } else {
-      /* If no switching has been done AND the direction is "asc",
-      set the direction to "desc" and run the while loop again. */
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+<script src="javascript.js">
 </script>
 
 
