@@ -1,0 +1,102 @@
+/* Basic CSS reset */
+* {
+    box-sizing: border-box;
+}
+
+main {
+    padding: 50px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #568256;
+    margin: 0 0 10px 0;
+}
+
+header {
+    background: #209d5c;
+    padding: 22px;
+    position: sticky;
+    /* overflow: hidden; */ /* Remove this line */
+    top: 0; /* Add this line to specify where it sticks */
+}
+
+
+nav {
+    float: right;
+    background-color: #93d59c;
+}
+
+
+
+
+header > #logo  {
+    font-size: 2em;
+    /*    float: left;  */
+}
+
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+
+
+section {
+    float: left;
+    width: 70%;
+}
+
+article {
+    padding: 30px 5px;
+    border-bottom: 1px solid grey;
+    background-color: #ececec;
+    
+}
+article:hover {
+    background-color: #c5c5c5;
+}
+
+artice:last-child {
+    border-bottom: 0;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    background-color: #93d59c;
+    padding: 20px;
+}
+
+footer {
+
+    padding: 20px;
+    border-top: 1px solid black;
+    background-color: #e9e9e9;
+    border-radius: 0 0 20px 20px;
+}
+
+h2, h3{
+    margin: 0;
+}
+
+
+
+a {
+    color: #515151;
+
+}
+
+a:hover {
+    color: greenyellow;
+}
+
+nav > *{
+  padding: 0 20px 0 20px;
+}
