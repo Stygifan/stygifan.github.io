@@ -4,14 +4,16 @@ const button = document.querySelector('#submit');
 
 
 button.addEventListener('click', (event) => {
-    const query = text.value.toLowerCase();
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault();
+    const queries = text.value.toLowerCase().split(/[\s,]+/).filter(q => q); // Split by space or comma
     fetch('https://stygifan.github.io/data.json')
     .then(response => response.json())
     .then(data => {
-        const filteredUsers = data.users.filter(user => 
-            Object.values(user).some(value => 
-                String(value).toLowerCase().includes(query)
+        const filteredUsers = data.users.filter(user =>
+            queries.some(query =>
+                Object.values(user).some(value =>
+                    String(value).toLowerCase().includes(query)
+                )
             )
         );
         const existingTable = document.getElementById('info');
@@ -22,7 +24,6 @@ button.addEventListener('click', (event) => {
     })
     .catch(error => console.error('Error fetching JSON:', error));
 });
-
 
 
 
