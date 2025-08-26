@@ -1,156 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Home</title>
+    <meta charset="UTF-8" />
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="wrapper">
-        <header>
 
+<header>
+    <div id="head">
+        <h1>WTW WonderTwins</h1>
 
-
-            <div id="logo">
-                WtW
-            </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="gallery.html">Helpful Images</a>
-
-        </nav>
-        </header>
-
-
-
-
-        <main> 
-            <section>
-            <h1>List of people and their queues</h1>                           
-            </section>
-    <table id="info">
-        <tr>
-            <th onclick="sortTable(0)"">Name</th>
-            <th onclick="sortTable(1)">Queue 1</th>
-            <th onclick="sortTable(2)">Queue 2</th>
-            <th onclick="sortTable(3)">Queue 3</th>
-        </tr>
-
-    <tr>
-        <td>Zo</td>
-        <td>16.9</td>
-        <td>11</td>
-        <td>10.5</td>
-    </tr>
-
-        <tr>
-        <td>Pavlo</td>
-        <td>19</td>
-        <td>12</td>
-        <td>11.2</td>
-    </tr>
-
-    <tr>
-        <td>Okee</td>
-        <td>8</td>
-        <td>7.9</td>
-        <td>6.5</td>
-    </tr>
-    
-    <tr>
-        <td>Lex</td>
-        <td>17</td>
-        <td>11.8</td>
-        <td>10.8</td>
-    </tr>
-
-    <tr>
-        <td>Lord Jk</td>
-        <td>12.2</td>
-        <td>8.5</td>
-        <td>7.5</td>
-    </tr>
-
-    <tr>
-        <td>Mike</td>
-        <td>20.8</td>
-        <td>15.2</td>
-        <td>14.8</td>
-    </tr>
-
-    <tr>
-        <td>Fr3ddi3</td>
-        <td>16.7</td>
-        <td>13.3</td>
-        <td>12.5</td>
-    </tr>
-        <tr>
-        <td>MrsDoyle</td>
-        <td>12.3</td>
-        <td>9.4</td>
-        <td>8.9</td>
-    </tr>
-    </tr>
-        <tr>
-        <td>Audrye</td>
-        <td>23.1</td>
-        <td>16.3</td>
-        <td>14.2</td>
-    </tr>
-
-    <tr>
-        <td>AuntieJamo</td>
-        <td>21</td>
-        <td>13.8</td>
-        <td>13.6</td>
-    </tr>
-
-    <tr>
-        <td>DaddysGirl</td>
-        <td>22.7</td>
-        <td>13.8</td>
-        <td>13.7</td>
-    </tr>
-
-    <tr>
-        <td>Valkyrie</td>
-        <td>16.2</td>
-        <td>11.5</td>
-        <td>11.5</td>
-    </tr>
-
-    <tr>
-        <td>Lord Tuna</td>
-        <td>8.5</td>
-        <td>7.4</td>
-        <td>4.8</td>
-    </tr>
-    <tr>
-        <td>Imu</td>
-        <td>14.3</td>
-        <td>10.5</td>
-        <td>9.5</td>
-    </tr>
-    <tr>
-        <td>Stygifan</td>
-        <td>14.8</td>
-        <td>7.9</td>
-        <td>7.6</td>
-    </table>
-
-<script src="javascript.js">
-</script>
-
-
-<table></table>
-    
-<script>
-
-</script>
-
-        </main>
-        <footer>&copy; Stygifan</footer>
     </div>
-    </body>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+        </nav>
+</header>
+<script src="app.js"></script>
+
+
+<div id="aside">
+    <aside>
+        <form>
+        <label for="points">Number:</label>
+        <input type="number" id="number" name="number" step="0.5">
+        <button type="button" id="submit">Search</button>
+    </form>
+
+    </aside>
+</div>
+
+<footer> &copy; Stygifan</footer>
+
+<script src="aside.js"></script>
+</body>
 </html>
