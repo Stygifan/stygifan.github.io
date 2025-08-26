@@ -89,6 +89,12 @@
         "queue":14.8,
         "queueTwo":7.9,
         "queueThree":7.6
+        },
+        {
+        "name":"Neos",
+        "queue":13.5,
+        "queueTwo":9.6,
+        "queueThree":9.2
         }
         ]
 }
